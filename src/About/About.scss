@@ -1,0 +1,36 @@
+@import "../Variables.scss";
+
+.imagen {
+    background-image:url('../images/mapa.jpg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: 0 -533px;
+    height: 150px;
+    background-size: cover;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.about {
+    img {
+    width:100%;
+    border: 2px solid $white;
+    }
+    .texto {
+        padding-top: 10px;
+        p {
+            color:#000000;
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width: 992px) { 
+    .about {
+        .texto{
+            margin-top:30px;
+        }
+    }
+}
+

@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&family=Noto+Sans:ital@1&display=swap');
+@import "Variables.scss";
+
+
+
+body {
+    background-color:#ffffff;
+    font-family: $font;
+    font-size:$fontSize;
+    p {
+        font-size:$fontSize;
+        color:$white;
+    }
+    #content {
+        margin: 30px 0 0;
+        min-height: 265px;
+
+        .imagen {
+            &.scroll {
+                animation-name: backPosition;
+                animation-duration: 3s;
+                
+            }
+        }
+    }
+
+    
+    
+}
+
+@keyframes backPosition {
+    from {
+      background-position:0 -533px;
+    }
+    to {
+        background-position:0 -633px;
+    }
+  }
+
+
+
+@media only screen and (max-width: 992px) { 
+    body {
+        #content {
+            margin:50px 0;   
+            
+            .imagen {
+                background-size:auto;
+                height:100px;
+            }
+        }
+        
+    }
+}

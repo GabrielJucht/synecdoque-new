@@ -1,0 +1,60 @@
+@import "../Variables.scss";
+
+.downloads {
+    /*background-color:$green;*/
+    margin-top: -6px;
+    padding: 50px 0;
+    ul.numeros {
+        width:100%;
+        li {
+            float:left;
+            list-style-type: none;
+            text-transform: uppercase;
+            text-align: center;
+            a {
+            &.imagen-thumb {
+                display: inline-block;
+                height: auto;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            &.nombre {
+                clear: left;
+                color:#000000;
+                float: left;
+                text-align: center;
+                width: 100%;
+            }
+            }
+        }
+    }
+}
+
+
+
+.imagen-numeros {
+    background-image:url('../images/painting2.jpg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: 0 -533px;
+    height: 150px;
+    background-size: cover;
+    margin-top: 30px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {  
+    .downloads {
+    ul.numeros {
+    li {
+        margin-bottom: 60px;
+        a.imagen-thumb{  
+            float:none;
+        }
+    }
+    }
+
+}
+
+}

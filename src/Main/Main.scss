@@ -1,0 +1,50 @@
+@import "../Variables.scss";
+
+
+.main {
+    display:inline-block;
+    img {
+        margin:0 auto;
+        width: 100%;
+    }
+
+    .hero-text {
+        background-image:url('../images/back-square.png');
+        background-repeat:repeat;
+        position: absolute;
+        padding: 25px 30px;
+        width: 25%;
+        top: 390px;
+        p {
+            font-size: 16px;
+            text-shadow: 1px 1px 1px #000000;
+        }
+        
+    }
+
+    h1 {
+        color: $white;
+        font-size: 34px;    
+        font-family: 'Raleway';
+        font-weight:600;
+        text-shadow: 1px 1px 1px #000000;
+    }
+}
+
+@media only screen and (max-width: 992px) { 
+    .main {
+        .hero-text {
+            width: 60%;
+            top: 126px;
+            height: 227px;
+            padding: 20px 20px 0px;
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size:14px;
+            }
+        }
+    }
+
+}
